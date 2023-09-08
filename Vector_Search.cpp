@@ -33,6 +33,9 @@ int main()
                 cout<<"No "<<i+1<<endl;
                 break;
             }
+            else{
+                cout<<"No "<<n<<endl;
+            }
         }
     }
     return 0;
