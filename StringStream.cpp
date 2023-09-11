@@ -3,17 +3,23 @@ using namespace std;
 
 int main()
 {
-    cout<<"Enter the String : ";
-    cin>>str;
+    string x;
+    cin>>x;
+    stringstream ss(x);
     char ch;
-    string str;
-    stringstream ss(str);
-    char ch;
-    for(int i=0;i<str.length();i++)
+    int a[x.length()];
+    for(int i=0;i<x.length();i++)
     {
-        ss>>i>>ch;
+        ss>>a[i]>>ch;
     }
-    // int a, b, c;
-    // ss >> a >> ch >> b >> ch >> c;
-    // cout<<a<<" "<<b<<" "<<c;
+    for(int i=0;i<x.length();i++)
+    {
+        if(a[i]==0)
+        {
+            break;      
+        }
+        cout<<a[i]<<endl;
+    }
+
+    
 }
