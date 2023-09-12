@@ -1,16 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// int Print()
-// {
-//     int n;
-//     int p[n];
-//     int* a=p;
-//     for(int i=0;i<n;i++)
-//     {
-//         cout<<p[i]<<" ";
-//     }
-// }
+
 
 
 int main()
@@ -24,5 +15,10 @@ int main()
         cin>>a[i];
     }
     int* p=a;
-    cout<< p;
+    cout<<a<<endl;                      // Same as cout<<&a<<endl;
+    cout<<p<<endl;
+    for(int i=0;i<n;i++)
+    {
+        cout<<p[i]<<" ";
+    }
 }
