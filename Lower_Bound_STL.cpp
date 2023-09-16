@@ -1,39 +1,38 @@
-//Input is a Set of n numbers. We give input and check if number is present and if yes/no, what is its index.
-
-
+// Search for an element, and see its index or possible index.
 
 #include <bits/stdc++.h>
 using namespace std;
 
-
-int main() 
+int main () 
 {
-    long long n;
+    int n;
     cin>>n;
-    vector <long long> v(n);
+    int a[n];
     for(int i=0;i<n;i++)
     {
-        cin>>v[i];
+        cin>>a[i];
     }
-    long long y;
-    long long q;
-    cin>>q;
-    for(int i=0;i<q;i++)
+
+    int m;
+    cin>>m;
+    int k[m];
+    for(int i=0;i<m;i++)
     {
-        cin>>y;
-        for(int i=0;i<n;i++)
+        cin>>k[i];
+        for(int j=0;j<n;j++)
         {
-            if(y==v[i])
-            {
-                cout<<"Yes "<<i+1<<endl;
-                break;
-            }
-            else if(y<v[i])
-            {
-                cout<<"No "<<i+1<<endl;
-                break;
-            }
+            std::vector<int> v(a,a+n);           
+            std::sort (v.begin(), v.end());             
+
+            std::vector<int>::iterator low;
+            low=std::lower_bound (v.begin(), v.end(), k); 
+            std::cout << "lower_bound at position " << (low- v.begin()) << '\n';
         }
     }
+
+
+
+
+
     return 0;
 }
