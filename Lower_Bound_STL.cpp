@@ -13,26 +13,34 @@ int main ()
         cin>>a[i];
     }
 
+    int k;
+    cin>>k;
     int m;
-    cin>>m;
-    int k[m];
-    for(int i=0;i<m;i++)
+    for(int i=0;i<k;i++)
     {
-        cin>>k[i];
-        for(int j=0;j<n;j++)
+        cin>>m;
+        vector <int> v(a,a+n);  
+        vector <int> :: iterator lower;
+        lower = lower_bound(v.begin(),v.end(),m);
+        int z=0;
+        for(int i=0;i<n;i++)
         {
-            std::vector<int> v(a,a+n);           
-            std::sort (v.begin(), v.end());             
-
-            std::vector<int>::iterator low;
-            low=std::lower_bound (v.begin(), v.end(), k); 
-            std::cout << "lower_bound at position " << (low- v.begin()) << '\n';
+            if(m==a[i])
+            {
+                z=1;
+            }
         }
+
+        if (z==1)
+        {
+            cout<<"Yes "<<(lower-v.begin()+1)<<endl;
+        }
+        else
+        {
+            cout<<"No "<<(lower-v.begin()+1)<<endl;
+        }
+        
     }
-
-
-
-
 
     return 0;
 }
