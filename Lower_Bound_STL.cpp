@@ -1,4 +1,4 @@
-// Search for an element, and see its index or possible index.
+// Search for an element, and see its index or possible index using STL.
 
 #include <bits/stdc++.h>
 using namespace std;
