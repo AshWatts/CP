@@ -7,8 +7,8 @@ int main()
     int n;
     cout<<"Enter Value : ";
     cin>>n;
-    int *p;
+    int *p=n;
     cout<<p<<endl;
     cout<<&n<<endl;
-
+   
 }
