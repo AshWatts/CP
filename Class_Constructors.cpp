@@ -1,26 +1,33 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class Car 
+class student 
 {      
   public:          
-    string brand; 
-    string model; 
-    int year;      
-    Car(string x, string y, int z) 
+    string name; 
+    int age;    
+
+    void intro()
     {
-      brand = x;
-      model = y;
-      year = z;
+      cout<<"Name - "<<name<<"  "<<"Age -  "<<age<<endl;
+    }  
+
+    student(string x, int y)       // Constructor always in PUBLIC!
+    {
+      name = x;
+      age = y;
     }
 };
 
 int main() 
 {
-  Car carObj1("BMW", "X5", 1999);
-  Car carObj2("Ford", "Mustang", 1969);
+  student s1=student("a",21);
+  student s2=student("b",12);
 
-  cout << carObj1.brand << " " << carObj1.model << " " << carObj1.year << "\n";
-  cout << carObj2.brand << " " << carObj2.model << " " << carObj2.year << "\n";
+  s1.intro();
+  s2.intro();
+
+  cout << s1.name <<" "<<s1.age<<endl;
+  cout << s2.name <<" "<<s2.age<<endl;
   return 0;
 }
