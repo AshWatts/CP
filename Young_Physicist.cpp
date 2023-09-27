@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Main function.
+
 int main()
 {
     int n;
@@ -15,8 +15,6 @@ int main()
          cin >> a[i][j];
       }
    }
-
-   cout << endl;
 
    int s1=0;
    int s2=0;
@@ -41,11 +39,11 @@ int main()
     }
    }
 
-   if(s1=0)
+   if(s1==0)
    {
-    if(s2=0)
+    if(s2==0)
     {
-        if(s3=0)
+        if(s3==0)
         {
             cout<<"YES";
         }
