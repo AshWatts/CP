@@ -10,7 +10,6 @@ int main()
     string s;
     cin>>s;
 
-    cout<<s;
 
     char b;
 
@@ -18,7 +17,7 @@ int main()
     {
         if(s[i]=='G')
         {
-            b=s[i];
+            b=s[i-1];
             s[i-1]=s[i];
             s[i]=b;
         }
