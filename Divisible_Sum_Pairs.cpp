@@ -13,16 +13,17 @@ int main()
     }
     
     int c=0;
-
     
     for(int i=0;i<n;i++)
     {
-
-        for(int j=0;j<n;j++)
+        for(int j=i+1;j<n;j++)
         {
-            if(a[i]+a[j]==k)
+            for(int d=0;d<100;d++)
+            {
+            if(a[i]+a[j]==d*k)
             {
                 c=c+1;
+            }
             }
         }
     }
