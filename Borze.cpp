@@ -20,10 +20,12 @@ int main()
             if(s[i+1]=='.')
             {
                 b.append("1");
+                i=i+1;
             }
             else if(s[i+1]=='-')
             {
                 b.append("2");
+                i=i+1;
             }
         }
     }
