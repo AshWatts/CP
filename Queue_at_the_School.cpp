@@ -13,15 +13,20 @@ int main()
 
     char b;
 
-    for(int i=1;i<=t;i++)
+    for(int j=0;j<n;j++)
     {
-        if(s[i]=='G')
+        for(int i=j+1;i<=t;i++)
         {
+        if(s[i]=='G')
+            {
             b=s[i-1];
             s[i-1]=s[i];
             s[i]=b;
+            }
         }
     }
+
+
 
     cout<<s;
 }
