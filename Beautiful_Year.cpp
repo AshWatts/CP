@@ -3,9 +3,12 @@ using namespace std;
 
 int main()
 {
-    int a,b;
+    int a;
     cin>>a;
-    for(int i=0;i<4;i++)
+    while(true)
     {
+        a=a+1;
+        int b=a/1000;
+        int c=a/100%10;
     }
 }
