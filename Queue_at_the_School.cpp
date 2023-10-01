@@ -11,21 +11,18 @@ int main()
     cin>>s;
 
 
-    char b;
-
-    for(int j=0;j<n;j++)
+    while(t--)
     {
-        for(int i=j+1;i<=t;i++)
+        for(int i=1;i<n;i++)
         {
-        if(s[i]=='G')
+            if(s[i]=='G' and s[i-1]=='B')
             {
-            b=s[i-1];
-            s[i-1]=s[i];
-            s[i]=b;
+                s[i]='B';
+                s[i-1]='G';
+                i++;
             }
         }
     }
-
 
 
     cout<<s;
