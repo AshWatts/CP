@@ -5,6 +5,6 @@ int main()
 {
     int n;
     cin>>n;
-    cout<<n;
-    cout<<n+n+33;
+    cout<<n<<endl;
+    cout<<n*n;
 }
