@@ -25,6 +25,7 @@ int main()
 {
     cout<<"Friend Function : ";
     class_name c;
+    class_name();
     cout<<friend_name(c);
     return 0;
 }
