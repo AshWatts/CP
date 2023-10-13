@@ -1,32 +1,31 @@
-#include<bits/stdc++.h>
+#include <iostream>
+
 using namespace std;
 
 int main()
 {
-    long long a;
-    cin>>a;
+    long long n;
+    cin >> n;
+    int count = 0;
 
-    string b;
-    b=to_string(a);
-
-    int count=0;
-    int c1=0,c2=0;
-
-    for(int i=0;i<b.length();i++)
+    while (n != 0)
     {
-        if(b[i]=='4' or b[i]=='7')
+        if (n % 10 == 4 || n % 10 == 7)
         {
-            count++;
+            count += 1;
         }
+        n /= 10;
     }
 
-    if(count == 0)
+    if (count == 4 || count == 7)
     {
-        cout<<"NO";
+        cout << "YES" << endl;
     }
 
-    if(count == 4 or count == 7)
+    else
     {
-        cout<<"YES";
+        cout << "NO" << endl;
     }
+    
+    return 0;
 }
