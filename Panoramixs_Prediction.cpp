@@ -7,4 +7,5 @@ int main()
     cin>>n;
     cin>>m;
     cout<<n+m;
+    cout<<n*m;
 }
