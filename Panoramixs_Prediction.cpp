@@ -8,4 +8,5 @@ int main()
     cin>>m;
     cout<<n+m;
     cout<<n*m;
+    cout<<n*n;
 }
