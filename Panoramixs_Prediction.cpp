@@ -9,4 +9,5 @@ int main()
     cout<<n+m;
     cout<<n*m;
     cout<<n*n;
+    cout<<m*m;
 }
