@@ -4,11 +4,9 @@ using namespace std;
 int main()
 {
     int n,m;
-    int count=0;
-    int c=0;
-    int k=0;
     cin>>n;
     cin>>m;
+    int count=0;
 
     for(int i=2;i<m/2;i++)
     {
@@ -20,11 +18,22 @@ int main()
         }
     }
 
-    int f=n;
 
     if(count==0)
     {
         cout<<"YES";
+        for(int i=n;i<2n;i++)
+        {
+            for(int j=2;j<n;j++)
+            {
+                if(i%j==0)
+                {
+                    break;
+                }
+            }
+        }
     }
+
+
 
 }
