@@ -14,21 +14,37 @@ int check(int a)
 
 int main()
 {
-    int n;
+    int n,m;
+    int count=0;
     cin>>n;
-
-    if(check(n)==0)
-    {
-        cout<<"0";
-    }
-    else
-    {
-        cout<<"1";
-    }
 
     while(n>0)
     {
-        
+        m=n%10;
+
+        if(check(m)==0)
+        {
+            count++;
+        }
+
+        n=n/10;
+    }
+
+    if(check(n)!=0)
+    {
+        if(count==0)
+        {
+            cout<<"1";
+        }
+        else
+        {
+            cout<<"0";
+        }
+    }
+
+    else
+    {
+        cout<<"0";
     }
 
 }
