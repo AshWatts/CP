@@ -39,7 +39,8 @@ for(int i = 0 ;i<v.size() ;i++)
 
 for(int i = 0 ;i<v.size() ;i++)
 {
-    if(v[i]==N){
+    if(v[i]==N)
+    {
         idx2=i;
     }
 }
@@ -47,7 +48,6 @@ for(int i = 0 ;i<v.size() ;i++)
 if((idx2-idx1)==1)
 {
     cout<<"YES\n";
-    cout<<"Giggity";
 }
 
 else
