@@ -48,6 +48,7 @@ for(int i = 0 ;i<v.size() ;i++)
 if((idx2-idx1)==1)
 {
     cout<<"YES\n";
+    cout<<"redidubveruib";
 }
 
 else
