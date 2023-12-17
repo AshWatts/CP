@@ -17,10 +17,12 @@ string helpful_maths(string s)
   sort(numbers.begin(), numbers.end()); // sort numbers in non-decreasing order
 
   string new_sum;
-  for (int i = 0; i < numbers.size(); ++i) {
+  for (int i = 0; i < numbers.size(); ++i) 
+  {
     new_sum += to_string(numbers[i]);
-    if (i < operators.size()) {
-      new_sum += operators[i];
+    if (i < operators.size()) 
+    {
+      new_sum = new_sum + operators[i];
     }
   }
 
