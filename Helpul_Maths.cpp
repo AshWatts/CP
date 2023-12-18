@@ -1,41 +1,48 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-string helpful_maths(string s) 
+
+string change(string s)
 {
-  vector<int> numbers;
-  vector<char> operators;
+  vector <int> n;
+  vector <char> o;
 
-  for (char c : s) {
-    if (isdigit(c)) {
-      numbers.push_back(c - '0'); // convert char to int
-    } else if (c != ' ') {
-      operators.push_back(c);
-    }
-  }
-
-  sort(numbers.begin(), numbers.end()); // sort numbers in non-decreasing order
-
-  string new_sum;
-  for (int i = 0; i < numbers.size(); ++i) 
+  for(char c : s)
   {
-    new_sum += to_string(numbers[i]);
-    if (i < operators.size()) 
+    if(isdigit(c))
     {
-      new_sum = new_sum + operators[i];
+      n.push_back(c - '0');
+    }
+    else if(c!=' ')
+    {
+      o.push_back(c);
     }
   }
 
-  return new_sum;
+  sort(n.begin(),n.end());
+
+  string ne="";
+
+  for(int i=0;i<n.size();i++)
+  {
+    ne+=to_string(n[i]);
+    if(i<o.size())
+    {
+      ne+=o[i];
+    }
+  }
+
+  return ne;
+
 }
 
-int main() 
+
+int main()
 {
-  string input_sum;
-  cin >> input_sum;
+  string exp;
+  cin>>exp;
 
-  string result = helpful_maths(input_sum);
-  cout << result << endl;
+  string result = change(exp);
 
-  return 0;
+  cout<<result;
 }
