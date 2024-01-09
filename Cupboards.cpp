@@ -3,14 +3,27 @@ using namespace std;
 
 int main()
 {
-    int count=0;
     int n;
-    int a,b;
-    
     cin>>n;
+    
+    int a[n];
+    int b[n];
+    
     for(int i=0;i<n;i++)
     {
-        cin>>a>>b;
-        cout<<a+b<<endl;
+        cin>>a[i];
+        cin>>b[i];
     }
+    int count1=0;
+    int count2=0;
+    int count3=0;
+    int count4=0;
+    for(int i=0;i<n;i++)
+    {
+        
+    }
+    int x,y;
+    x=min(count1,count2);
+    y=min(count3,count4);
+    cout<<min(x,y);
 }
