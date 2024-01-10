@@ -7,7 +7,6 @@ int check(int a)
     {
         if(a%i==0)
         {
-            cout<<"Hi";
             return 0;
         }
     }
