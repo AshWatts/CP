@@ -20,13 +20,25 @@ int main()
     int count4=0;
     for(int i=0;i<n;i++)
     {
-        if(a[i]==0)
+        if(a[i]==0 && b[i]==0)
         {
             count1++;
         }
+        if(a[i]==0 && b[i]==1)
+        {
+            count2++;
+        }
+        if(a[i]==1 && b[i]==0)
+        {
+            count3++;
+        }
+        if(a[i]==1 && b[i]==1)
+        {
+            count4++;
+        }
     }
     int x,y;
-    x=min(count1,count2);
-    y=min(count3,count4);
-    cout<<min(x,y);
+    x=max(count1,count2);
+    y=max(count3,count4);
+    cout<<max(x,y);
 }
