@@ -24,7 +24,7 @@ int main()
 
         if(check(m)==0)
         {
-            count++;
+            count=count+1;
         }
 
         n=n/10;
