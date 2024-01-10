@@ -20,7 +20,10 @@ int main()
     int count4=0;
     for(int i=0;i<n;i++)
     {
-        
+        if(a[i]==0)
+        {
+            count1++;
+        }
     }
     int x,y;
     x=min(count1,count2);
