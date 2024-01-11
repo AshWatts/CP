@@ -15,7 +15,7 @@ int main()
         cin>>b[i];
     }
     int count1=0;
-    int count2=0;
+    int count2=0; 
     int count3=0;
     int count4=0;
     for(int i=0;i<n;i++)
@@ -23,6 +23,10 @@ int main()
         if(a[i]==0 && b[i]==0)
         {
             count1++;
+        }
+        else if(a[i]==0 && b[i]==1)
+        {
+            count2++;
         }
     }
     int x,y;
