@@ -28,6 +28,10 @@ int main()
         {
             count2++;
         }
+        else if(a[i]==1 && b[i]==0)
+        {
+            count3++;
+        }
     }
     int x,y;
     x=min(count1,count2);
