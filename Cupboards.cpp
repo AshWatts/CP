@@ -32,6 +32,10 @@ int main()
         {
             count3++;
         }
+        else
+        {
+            count4++;
+        }
     }
     int x,y;
     x=min(count1,count2);
