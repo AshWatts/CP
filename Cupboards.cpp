@@ -32,9 +32,13 @@ int main()
         {
             count3++;
         }
+        else
+        {
+            count4++;
+        }
     }
     int x,y;
-    x=min(count1,count2);
-    y=min(count3,count4);
-    cout<<min(x,y);
+    x=max(count1,count2);
+    y=max(count3,count4);
+    cout<<max(x,y);
 }
