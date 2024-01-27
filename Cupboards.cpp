@@ -28,13 +28,9 @@ int main()
         {
             count2++;
         }
-        else if(a[i]==1 && b[i]==0)
+        else if(a[i]==1 && b[i]==0) 
         {
             count3++;
-        }
-        else
-        {
-            count4++;
         }
     }
     int x,y;
