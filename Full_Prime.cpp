@@ -9,12 +9,16 @@ int check(int a)
         {
             return 0;
         }
+        else 
+        {
+            return 1;
+        }
     }
 }   
 
 int main()
 {
-    int n,m;
+    int n,m;x
     int count=0;
     cin>>n;
 
