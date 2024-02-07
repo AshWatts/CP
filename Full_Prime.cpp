@@ -48,7 +48,7 @@ int main()
     
     else
     {
-        cout<<"NO";
+        cout<<"YES";
     }
 
 }
