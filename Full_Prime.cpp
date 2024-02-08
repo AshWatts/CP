@@ -18,7 +18,7 @@ int check(int a)
 
 int main()
 {
-    int n,m;x
+    int n,m;
     int count=0;
     cin>>n;
 
@@ -48,7 +48,7 @@ int main()
     
     else
     {
-        cout<<"NO";
+        cout<<"YES";
     }
 
 }
