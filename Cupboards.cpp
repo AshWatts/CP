@@ -32,10 +32,7 @@ int main()
         {
             count3++;
         }
-        else
-        {
-            count4++;
-        }
+
     }
     int x,y;
     x=max(count1,count2);
