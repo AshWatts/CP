@@ -46,13 +46,13 @@ int main()
     }
     else
     {
-        for(int i=0;i<n-2;i++)
+        for(int i=n-2;i>=0;i--)
         {
             max1-=a[i];
             max2+=a[i];
             if(max2>max1)
             {
-                cout<<i+2;
+                cout<<n-i;
                 break;
             }
         }
