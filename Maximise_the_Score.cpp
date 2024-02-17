@@ -19,7 +19,9 @@ int main()
             cin>>a[i];
         }
 
-        for(int i=0;i<n;i++)
+        sort(a,a+m);
+
+        for(int i=0;i<n;i+=2)
         {
             sum+=a[i];
         }
