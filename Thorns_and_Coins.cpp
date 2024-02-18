@@ -38,6 +38,6 @@ int main()
                 continue;
             }
         }
-        cout<<count;
+        cout<<count<<endl;
     }
 }
