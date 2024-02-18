@@ -10,7 +10,7 @@ int main()
     {
         cin>>x;
         int max = 0;
-        int min=0;
+        int min = 0;
 
         if(x%2==0)
         {
