@@ -13,12 +13,12 @@ int main()
         int min = 0;
 
         if(x%2==0)
-        {
+        {   
             max=x/2;
         }
         else
         {
-            max=x/2+1;
+            max=x/2-1;
         }
 
         cout<<max;
