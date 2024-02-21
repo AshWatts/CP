@@ -18,7 +18,7 @@ int main()
         }
         else
         {
-            max=x/2-1;
+            max=x/2+1;
         }
 
         cout<<max;
