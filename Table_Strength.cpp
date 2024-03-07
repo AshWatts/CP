@@ -21,14 +21,5 @@ int main()
         {
             cout<<w[i]<<"  ";
         }
-        
-        int z;
-        z=w[n-1];
-        for(int j=1;j<n;j++)
-        {
-            
-        }
-
-        cout<<endl;
     }
 }
