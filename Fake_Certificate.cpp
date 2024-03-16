@@ -30,6 +30,6 @@ int main()
             }
         }
         
-        cout<<max(c1,c2)<<endl;
+        cout<<c1-c2<<endl;
     }
 }
