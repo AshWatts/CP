@@ -14,22 +14,16 @@ int main()
         {
             cin>>s[i];
         }
-        
-        int c1=0;
-        int c2=0;      
 
+        int z1=0;
         for(int i=0;i<n;i++)
         {
-            if(s[i]=='0')
+            if(s[i]=='1')
             {
-                c1++;
-            }
-            else if(s[i]=='1')
-            {
-                c2++;
+                z1++;
             }
         }
-        
-        cout<<c1-c2<<endl;
+
+        int z0=0;
     }
 }
