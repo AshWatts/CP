@@ -25,6 +25,7 @@ int main()
         }
 
         int z0=0;
+        cout<<z1+z0;
         
     }
 }
