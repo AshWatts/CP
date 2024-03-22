@@ -24,7 +24,7 @@ int main()
             }
         }
 
-        int z0=10;
+        int z0=100;
         cout<<z1+z0;
         
     }
