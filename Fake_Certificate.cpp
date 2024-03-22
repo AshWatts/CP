@@ -17,14 +17,14 @@ int main()
 
         int z1=0;
         for(int i=0;i<n;i++)
-        {
+        { 
             if(s[i]=='1')
             {
                 z1++;
             }
         }
 
-        int z0=0;
+        int z0=10;
         cout<<z1+z0;
         
     }
