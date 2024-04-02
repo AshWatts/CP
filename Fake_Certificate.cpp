@@ -26,6 +26,6 @@ int main()
 
         int z0;
         cin>>z0;
-        cout<<(z1-z0)*11;
+        cout<<(z1-z0)*8;
     }
 }
