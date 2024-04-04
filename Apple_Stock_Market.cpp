@@ -3,7 +3,7 @@ using namespace std;
 
 int main() 
 {
-    int a;
+    int a,j;
     cout<<"Enter Number of Days : ";
     cin>>a;
     int arr[a];
@@ -19,17 +19,7 @@ int main()
         if(min>arr[i])
         {
             min=arr[i];
-        }
-    }
-
-    int j;
-
-    for(int i=0;i<a;i++)
-    {
-        if(arr[i]==min)
-        {
             j=i;
-            break;
         }
     }
 
@@ -43,7 +33,7 @@ int main()
         max=arr[j+1];
     }
 
-    for(int i=j;i<a;i++)
+    for(int i=j+1;i<a;i++)
     {
         if(max<arr[i])
         {
