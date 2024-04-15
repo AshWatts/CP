@@ -22,7 +22,7 @@ int main()
 		}
 		else
 		{
-			cout<<"NO"<<endl;
+			cout<<"NOPE"<<endl;
 		}
 	}
 }
