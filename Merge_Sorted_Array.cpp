@@ -20,21 +20,21 @@ int main()
         }
         sort(nums1, nums1 + m);
         sort(nums2, nums2 + n);
-        
+
+        int r[m+n];
         for(int i=0;i<m;i++)
         {
-            for(int j=0;j<n;j++)
-            {
-                if(nums1[i]<nums2[j])
-                {
-                    cout<<nums1[i]<<" ";
-                    i++;
-                }
-                else
-                {
-                    cout<<nums2[j]<<" ";
-                    j++;
-                }
-            }
+            r[i]=nums1[i];
+        }
+        for(int i=0;i<n;i++)
+        {
+            r[m+i]=nums2[i];
+        }
+
+        sort(r,r+m+n);
+
+        for(int i=0;i<m+n;i++)
+        {
+            cout<<r[i]<<" ";
         }
     } 
