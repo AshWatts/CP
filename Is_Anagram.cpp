@@ -29,4 +29,4 @@ int main()
     string s2 = "nagaram";
     cout << s.isAnagram(s1, s2) << endl;
     return 0;
-}
+    
