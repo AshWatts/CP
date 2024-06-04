@@ -4,15 +4,16 @@ using namespace std;
 class Solution {
 public:
     bool hasDuplicate(vector<int>& nums) {
-        int x=nums.size();
-        for(int i=0;i<x;i++)
+        if(nums.empty())
         {
-            for(int j=i+1;j<x;j++)
+            return false;
+        }
+        sort(nums.begin(),nums.end());
+        for(int i=0;i<nums.size()-1;i++)
+        {
+            if(nums[i]==nums[i+1])
             {
-                if(nums[i]==nums[j])
-                {
-                    return true;
-                }
+                return true;
             }
         }
         return false;
