@@ -22,9 +22,9 @@ void nBinaryTriangle(int n) {
             {
                 if (j % 2 == 0) 
                 {
-                    cout << 0 <<endl;
+                    cout << 0 <<" ";
                 } else {
-                    cout << 1 <<endl;
+                    cout << 1 <<" ";
                 }
             }
         }
