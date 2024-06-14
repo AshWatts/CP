@@ -28,7 +28,7 @@ void nBinaryTriangle(int n) {
                 }
             }
         }
-        cout<<endl;
+        cout<<endl<<endl;
     }
 }
 
