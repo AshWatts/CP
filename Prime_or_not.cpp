@@ -15,14 +15,19 @@ class Prime
     void check()
     {
         int b=0;
-        for(int i=2;i<a;i++)
+        for(int i=1;i<=sqrt(a);i++)
         {
             if(a%i==0)
             {
-                b=1;
+                b++;
+            }
+
+            if(a/i!=i)
+            {
+                b++;
             }
         }
-        if(b==0)
+        if(b==2)
         {
             cout<<"Prime";
         }
