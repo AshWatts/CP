@@ -1,14 +1,24 @@
 #include <iostream>
 using namespace std;
 
-void reverseArray(int arr[], int n) 
+// void reverseArray(int arr[], int n) 
+// {
+//   int i, temp;
+//   for (i = 0; i < n / 2; i++) {
+//     temp = arr[i];
+//     arr[i] = arr[n - i - 1];
+//     arr[n - i - 1] = temp;
+//   }
+// }
+
+void reverseArray(int i, int arr[], int n)
 {
-  int i, temp;
-  for (i = 0; i < n / 2; i++) {
-    temp = arr[i];
-    arr[i] = arr[n - i - 1];
-    arr[n - i - 1] = temp;
+  while(i<n/2)
+  {
+    arr[i],arr[n-i-1]=arr[n-i-1],arr[i];
+    reverseArray(i+1,arr,n);
   }
+  return;
 }
 
 int main() 
@@ -24,7 +34,7 @@ int main()
     cin >> arr[i];
   }
 
-  reverseArray(arr, n);
+  reverseArray(0,arr,n);
 
   for (int i = 0; i < n; i++) 
   {
