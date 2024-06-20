@@ -1,7 +1,9 @@
-// Code to find number of occurences of an element(between 0 and 10) in an array using hashing
+// Code to find number of occurences of an element(from 0 to 9) in an array using hashing
 
 #include<bits/stdc++.h>
 using namespace std;
+
+// int Hash[10];        Here all elements are initialized to 0
 
 int main(){
     int n ;
@@ -14,9 +16,9 @@ int main(){
         cin>>arr[i];
     }
 
-    int hash[10] = {0};
+    int Hash[10] = {0};
     for(int i=0;i<n;i++){
-        hash[arr[i]]++;
+        Hash[arr[i]]++;
     }
 
     int x;
@@ -25,6 +27,6 @@ int main(){
     while(x--){
         int z;
         cin>>z;
-        cout<<hash[z]<<endl;
+        cout<<Hash[z]<<endl;
     }
 }
