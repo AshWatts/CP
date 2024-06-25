@@ -30,6 +30,22 @@ class Solution
         }
     }
 
+    // RECURSIVE BUBBLE SORT
+
+    // void bubbleSort(int arr[], int n) {
+    //     if(n==1){
+    //         return;
+    //     }
+    //     for(int i=0;i<n-1;i++){
+    //         if(arr[i]>arr[i+1]){
+    //             int temp = arr[i];
+    //             arr[i] = arr[i+1];
+    //             arr[i+1] = temp;
+    //         }
+    //     }
+    //     bubbleSort(arr,n-1);
+    // }
+
     // INSERTION SORT
 
     void insertionSort(int arr[], int n)
@@ -59,6 +75,28 @@ class Solution
     //             j--;
     //         }
     //     }
+    // }
+
+    // RECURSIVE INSERTION SORT
+
+    // void insert(int arr[], int i, int n)
+    // {
+    //     if(i==n || i==0){
+    //         return;
+    //     }
+    //     int j=i;
+    //     while(j>0 && arr[j]<arr[j-1]){
+    //         int temp = arr[j];
+    //         arr[j] = arr[j-1];
+    //         arr[j-1] = temp;
+    //         j--;
+    //     }
+    //     insert(arr,i+1,n);
+    // }
+    
+    // void insertionSort(int arr[], int n)
+    // {
+    //     insert(arr,1,n);
     // }
 
     // MERGE SORT
@@ -142,10 +180,10 @@ int main(){
     int arr[] = {5,4,1,3,2};
     int n = 5;
     Solution obj;
-    obj.selectionSort(arr,n);
-    obj.bubbleSort(arr,n);
-    obj.insertionSort(arr,n);
-    obj.mergeSort(arr,0,n-1);
+    // obj.selectionSort(arr,n);
+    // obj.bubbleSort(arr,n);
+    // obj.insertionSort(arr,n);
+    // obj.mergeSort(arr,0,n-1);
     obj.quickSort(arr,0,n-1);
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
