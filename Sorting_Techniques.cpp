@@ -183,8 +183,8 @@ int main(){
     Solution obj;
     // obj.selectionSort(arr,n);
     // obj.bubbleSort(arr,n);
-    obj.insertionSort(arr,n);
-    // obj.mergeSort(arr,0,n-1);
+    // obj.insertionSort(arr,n);
+    obj.mergeSort(arr,0,n-1);
     // obj.quickSort(arr,0,n-1);
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
