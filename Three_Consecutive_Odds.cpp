@@ -21,5 +21,8 @@ public:
 };
 
 int main(){
-    
+    Solution s;
+    vector<int> arr = {2,6,4,1};
+    cout<<s.threeConsecutiveOdds(arr)<<endl;
+    return 0;
 }
