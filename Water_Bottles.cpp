@@ -15,6 +15,6 @@ public:
 
 int main(){
     Solution obj;
-    cout<<obj.numWaterBottles(230,2)<<endl;
+    cout<<obj.numWaterBottles(149,33)<<endl;
     return 0;
 }
