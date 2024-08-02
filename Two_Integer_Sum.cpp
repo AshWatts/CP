@@ -21,8 +21,8 @@ public:
 int main()
 {
     Solution s;
-    vector<int> nums = {1,14,333,23};
-    int target = 347;
+    vector<int> nums = {3,45,2,23};
+    int target = 47;
     vector<int> result = s.twoSum(nums,target);
     for(int i=0;i<result.size();i++)
     {
