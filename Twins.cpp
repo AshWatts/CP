@@ -52,7 +52,7 @@ int main()
             max2+=a[i];
             if(max2>max1)
             {
-                cout<<n-i;
+                cout<<n-i<<" ";
                 break;
             }
         }
