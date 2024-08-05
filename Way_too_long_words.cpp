@@ -22,7 +22,7 @@ int main()
             cout<<s[0];
             cout<<m-2;
             cout<<s[m-1];
-            cout<<endl;
+            cout<<endl<<endl;
         }
     }
 }
