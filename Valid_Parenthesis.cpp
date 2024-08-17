@@ -35,7 +35,7 @@ public:
 int main()
 {
     Solution ss;
-    string s = "({{}[[]]})";
+    string s = "({{}[[((()))]]})";
     cout<<ss.isValid(s);
     return 0;
 }
