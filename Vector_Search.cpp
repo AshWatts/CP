@@ -25,16 +25,16 @@ int main()
         {
             if(y==v[i])
             {
-                cout<<"Yes  "<<i+1<<endl;
+                cout<<"Yes "<<i+1<<endl;
                 break;
             }
             else if(y<v[i])
             {
-                cout<<"No  "<<i+1<<endl;
+                cout<<"No "<<i+1<<endl;
                 break;
             }
             else{
-                cout<<"No  "<<n<<endl;
+                cout<<"No "<<n<<endl;
             }
         }
     }
