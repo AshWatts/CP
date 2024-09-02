@@ -2,16 +2,16 @@ import datetime
 
 def calculate_age(dob):
     today = datetime.date.today()
-    age = today.year - dob.year
+    age = today.year - dob.year - 1
     if today < datetime.date(today.year, dob.month, dob.day):
         age -= 1
     return age
 
 # Get the date of birth for person 1
-dob1 = datetime.date(1990, 5, 15)  # Replace with the actual date of birth
+dob1 = datetime.date(1906, 5, 15)  # Replace with the actual date of birth
 
 # Get the date of birth for person 2
-dob2 = datetime.date(1985, 10, 20)  # Replace with the actual date of birth
+dob2 = datetime.date(1975, 10, 20)  # Replace with the actual date of birth
 
 # Calculate the ages
 age1 = calculate_age(dob1)
